@@ -19,16 +19,226 @@ body {
     color: white;
     font-size: 18px;
     font-family: DM Sans;
-    height: 150px;
+    height: 200px;
     border-radius: 10px;
-    padding: 0px;
+    padding: 0;
+    font-weight: bold;
 }
 
 .primero img {
     width: 100px;
-    height: 100px;
+    height: 20px;
+    margin: 0;
+    margin-top: 10px;
 }
 
-.primero span {
+.primero p {
+    margin: 0;
+
+}
+
+.primero .equis {
     color: hsl(39, 100%, 71%);
+}
+
+.primero .cursiva {
+    font-style: italic;
+}
+
+.primero .primeroPequeño {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/*----------------------------------------------------------------*/
+
+.segundo img {
+    width: 300px;
+    margin-top: 15px;
+}
+
+.segundo p {
+    margin: 5px 0;
+    color: hsl(0, 0%, 7%);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+
+/*----------------------------------------------------------------*/
+
+.tercero {
+    height: 200px;
+    background-color: hsl(39, 100%, 71%);
+    border-radius: 10px;
+}
+
+.tercero p {
+    margin-top: 8px;
+    padding-top: 10px;
+    margin-left: 20px;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tercero img {
+    width: 180px;
+    padding-left: 20px;
+}
+
+/*----------------------------------------------------------------*/
+
+.cuarto {
+    margin-top: 15px;
+    height: 420px;
+    background-color: hsl(254, 88%, 90%);
+}
+
+.cuarto p {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    margin-left: 20px;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cuarto img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding-left: 20px;
+}
+
+.cuarto .cuartoPequeño {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.cuarto .cuartoPequeño p {
+    font-family: DM Sans;
+    gap: 0;
+    font-size: 17px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/*----------------------------------------------*/
+
+.quinto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: hsl(256, 67%, 59%);
+    border-radius: 10px;
+    margin-top: 15px;
+    padding-top: 30px;
+}
+
+.quinto p {
+    color: hsl(0, 0%, 100%);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quinto img {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*----------------------------------------------*/
+
+.sexto {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    background-color: ivory;
+    border-radius: 10px;
+    margin-top: 35px;
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+.sexto p {
+    font-family: DM Sans;
+}
+
+.sexto img {
+    width: 140px;
+}
+
+.sexto span {
+    font-size: 40px;
+    font-family: DM Sans;
+    font-weight: bold;
+}
+
+
+
+/*----------------------------------------------*/
+
+.septimo {
+    margin-top: 15px;
+    padding-top: 5px;
+    height: 150px;
+    background-color: hsl(31, 66%, 93%);
+    border-radius: 10px;
+}
+
+.septimo p {
+    padding-top: 5px;
+    margin-left: 40px;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.septimo img {
+    width: 130px;
+    margin-left: 40px;
+}
+
+.septimo span {
+    color: hsl(256, 67%, 59%);
+    font-style: italic;
+}
+
+/*----------------------------------------------*/
+
+.octavo {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    height: 280px;
+    background-color: hsl(39, 100%, 71%);
+    border-radius: 10px;
+}
+
+.octavo p {
+    padding-top: 5px;
+    margin-left: 25px;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.octavo img {
+    width: 180px;
+    margin-left: 25px;
 }
