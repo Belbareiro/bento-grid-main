@@ -6,6 +6,106 @@
     font-weight: normal;
 }
 
+
+
+/* desktop */
+
+body {
+    margin: 20px;
+    font-family: DM Sans;
+    display: grid;
+    /* Habilitar Grid en el body */
+    place-items: center;
+    /* Centrar horizontal y verticalmente */
+    height: 100vh;
+    /* Altura completa de la ventana */
+    margin: 0;
+}
+
+/* Contenedor principal para el diseño de escritorio */
+@media (min-width: 768px) {
+
+    /* Ajusta este valor según tus necesidades */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        /* Espacio entre los elementos de la cuadrícula */
+    }
+
+    .primero {
+        grid-column: 2;
+        /* Centrado en la segunda columna */
+        grid-row: 1;
+        /* En la tercera fila */
+        background-color: hsl(256, 67%, 59%);
+        color: white;
+
+    }
+
+    /* Contenedor para segundo y tercero */
+    .cuadro-segundo-tercero {
+        grid-column: 2;
+        /* Coloca el contenedor en la segunda columna */
+        grid-row: 2;
+        /* En la segunda fila */
+        display: flex;
+    }
+
+    /* Segundo elemento */
+    .segundo {
+        flex: 1;
+        /* Ocupa la mitad del espacio disponible */
+
+
+    }
+
+    /* Tercero elemento */
+    .tercero {
+        flex: 1;
+        /* Ocupa la mitad del espacio disponible */
+
+    }
+
+    .cuarto {
+        grid-column: 3;
+        grid-row: 1/3;
+    }
+
+    .quinto {
+        grid-column: 3;
+        grid-row: 3/ 3;
+    }
+
+    .sexto {
+        display: flex;
+        flex: 1;
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .septimo {
+        grid-column: 1;
+        grid-row: 1;
+        width: 300px;
+
+    }
+
+    .octavo {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+
+
+
+
+
+
+/* movil */
+
 body {
     margin: 20px;
 }
@@ -86,7 +186,7 @@ body {
 }
 
 .tercero img {
-    width: 180px;
+    width: 165px;
     padding-left: 20px;
 }
 
@@ -96,6 +196,11 @@ body {
     margin-top: 15px;
     height: 420px;
     background-color: hsl(254, 88%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+
 }
 
 .cuarto p {
@@ -114,7 +219,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 300px;
-    padding-left: 20px;
 }
 
 .cuarto .cuartoPequeño {
@@ -128,7 +232,7 @@ body {
 .cuarto .cuartoPequeño p {
     font-family: DM Sans;
     gap: 0;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: normal;
     margin: 0;
 }
@@ -242,3 +346,7 @@ body {
     width: 180px;
     margin-left: 25px;
 }
+
+
+
+/*----------------------------------------------*/
