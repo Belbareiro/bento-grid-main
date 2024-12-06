@@ -1,4 +1,13 @@
-/* movil */
+/* Resetear estilos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Personalizados */
+
 @font-face {
     font-family: "DM Sans";
     src: url('../assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
@@ -6,108 +15,33 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "DM Sans";
+    src: url('../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
 
 
-/* desktop */
+
+
 
 body {
-    margin: 20px;
-    font-family: DM Sans;
-    display: grid;
-    /* Habilitar Grid en el body */
-    place-items: center;
-    /* Centrar horizontal y verticalmente */
-    height: 100vh;
-    /* Altura completa de la ventana */
-    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    background: #F5F5F5;
 }
-
-/* Contenedor principal para el diseño de escritorio */
-@media (min-width: 768px) {
-
-    /* Ajusta este valor según tus necesidades */
-    .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        gap: 10px;
-        /* Espacio entre los elementos de la cuadrícula */
-    }
-
-    .primero {
-        grid-column: 2;
-        /* Centrado en la segunda columna */
-        grid-row: 1;
-        /* En la tercera fila */
-        background-color: hsl(256, 67%, 59%);
-        color: white;
-
-    }
-
-    /* Contenedor para segundo y tercero */
-    .cuadro-segundo-tercero {
-        grid-column: 2;
-        /* Coloca el contenedor en la segunda columna */
-        grid-row: 2;
-        /* En la segunda fila */
-        display: flex;
-    }
-
-    /* Segundo elemento */
-    .segundo {
-        flex: 1;
-        /* Ocupa la mitad del espacio disponible */
-
-
-    }
-
-    /* Tercero elemento */
-    .tercero {
-        flex: 1;
-        /* Ocupa la mitad del espacio disponible */
-
-    }
-
-    .cuarto {
-        grid-column: 3;
-        grid-row: 1/3;
-    }
-
-    .quinto {
-        grid-column: 3;
-        grid-row: 3/ 3;
-    }
-
-    .sexto {
-        display: flex;
-        flex: 1;
-        grid-column: 2;
-        grid-row: 3;
-    }
-
-    .septimo {
-        grid-column: 1;
-        grid-row: 1;
-        width: 300px;
-
-    }
-
-    .octavo {
-        grid-column: 1;
-        grid-row: 2;
-    }
-}
-
-
-
-
-
 
 
 /* movil */
 
-body {
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     margin: 20px;
+    max-width: 1440px;
+    /* View Height = Alto de la pantalla */
+
 }
 
 .primero {
@@ -117,24 +51,23 @@ body {
     justify-content: center;
     background-color: hsl(256, 67%, 59%);
     color: white;
-    font-size: 18px;
-    font-family: DM Sans;
-    height: 200px;
     border-radius: 10px;
     padding: 0;
-    font-weight: bold;
+    padding: 32px 16px;
+
 }
 
 .primero img {
-    width: 100px;
-    height: 20px;
-    margin: 0;
-    margin-top: 10px;
+    width: 100%;
+    max-width: 160px;
+
 }
 
-.primero p {
-    margin: 0;
-
+.primero h1 {
+    font-size: 42px;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 18px;
 }
 
 .primero .equis {
@@ -143,75 +76,76 @@ body {
 
 .primero .cursiva {
     font-style: italic;
+    margin-right: 8px;
 }
 
-.primero .primeroPequeño {
-    font-size: 12px;
-    font-weight: normal;
+.primero>p {
+    font-size: 14px;
+    opacity: 80%;
 }
+
+
+
 
 /*----------------------------------------------------------------*/
+.segundo {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 16px;
+}
 
 .segundo img {
     width: 300px;
-    margin-top: 15px;
+    margin-bottom: 14px;
 }
 
 .segundo p {
-    margin: 5px 0;
     color: hsl(0, 0%, 7%);
-    font-family: DM Sans;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 15px;
-    margin-top: 5px;
+    line-height: 1;
 }
 
 
 /*----------------------------------------------------------------*/
 
 .tercero {
-    height: 200px;
     background-color: hsl(39, 100%, 71%);
     border-radius: 10px;
+    padding: 16px;
+    padding-bottom: 0;
+    overflow: hidden;
 }
 
 .tercero p {
-    margin-top: 8px;
-    padding-top: 10px;
-    margin-left: 20px;
-    font-family: DM Sans;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
+    margin-bottom: 14px;
+    line-height: 1;
 }
 
 .tercero img {
     width: 165px;
-    padding-left: 20px;
+    margin-bottom: -20px;
 }
 
 /*----------------------------------------------------------------*/
 
 .cuarto {
-    margin-top: 15px;
-    height: 420px;
     background-color: hsl(254, 88%, 90%);
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-
+    padding: 24px 16px;
 }
 
-.cuarto p {
+.cuarto>p {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
-    padding-top: 10px;
-    margin-left: 20px;
-    font-family: DM Sans;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
+    margin-bottom: 18px;
 }
 
 .cuarto img {
@@ -219,6 +153,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 300px;
+    margin-bottom: 18px;
 }
 
 .cuarto .cuartoPequeño {
@@ -230,11 +165,8 @@ body {
 }
 
 .cuarto .cuartoPequeño p {
-    font-family: DM Sans;
-    gap: 0;
-    font-size: 15px;
-    font-weight: normal;
-    margin: 0;
+    text-align: center;
+    padding-inline: 24px
 }
 
 /*----------------------------------------------*/
@@ -244,22 +176,24 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200px;
     background-color: hsl(256, 67%, 59%);
     border-radius: 10px;
-    margin-top: 15px;
-    padding-top: 30px;
+    padding: 24px 16px;
 }
 
 .quinto p {
     color: hsl(0, 0%, 100%);
-    font-family: DM Sans;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: bold;
+    padding-inline: 32px;
+    text-align: center;
+    line-height: 1;
 }
 
 .quinto img {
-    width: 150px;
+    width: 100%;
+    margin-bottom: 32px;
+    max-width: 220px;
     display: flex;
     justify-content: center;
 }
@@ -271,25 +205,21 @@ body {
 .sexto {
     display: flex;
     flex-direction: column;
-    height: 180px;
-    background-color: ivory;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    margin-top: 35px;
-    padding-top: 15px;
-    padding-left: 30px;
+    padding: 16px;
 }
 
 .sexto p {
-    font-family: DM Sans;
+    margin-bottom: 16px;
 }
 
 .sexto img {
-    width: 140px;
+    width: 160px;
 }
 
 .sexto span {
     font-size: 40px;
-    font-family: DM Sans;
     font-weight: bold;
 }
 
@@ -298,24 +228,21 @@ body {
 /*----------------------------------------------*/
 
 .septimo {
-    margin-top: 15px;
-    padding-top: 5px;
-    height: 150px;
     background-color: hsl(31, 66%, 93%);
     border-radius: 10px;
+    padding: 24px;
 }
 
 .septimo p {
-    padding-top: 5px;
-    margin-left: 40px;
-    font-family: DM Sans;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
+    line-height: 1;
+    margin-bottom: 16px;
 }
 
 .septimo img {
     width: 130px;
-    margin-left: 40px;
+
 }
 
 .septimo span {
@@ -326,27 +253,175 @@ body {
 /*----------------------------------------------*/
 
 .octavo {
-    margin-top: 15px;
-    margin-bottom: 50px;
-    padding-top: 5px;
-    height: 280px;
     background-color: hsl(39, 100%, 71%);
     border-radius: 10px;
+    padding: 16px 24px;
 }
 
 .octavo p {
-    padding-top: 5px;
-    margin-left: 25px;
-    font-family: DM Sans;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
+    margin-bottom: 16px;
+    padding-right: 24px;
+    line-height: 1;
 }
 
 .octavo img {
     width: 180px;
-    margin-left: 25px;
 }
 
 
 
 /*----------------------------------------------*/
+
+.attribution {
+    text-align: center;
+}
+
+
+/* Contenedor principal para el diseño de escritorio */
+@media (min-width: 768px) {
+
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 256px);
+        place-self: center;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "septimo primero primero cuarto"
+            "septimo primero primero cuarto"
+            "septimo segundo tercero cuarto"
+            "octavo segundo tercero cuarto"
+            "octavo sexto quinto quinto"
+            "octavo sexto quinto quinto";
+        gap: 32px;
+        /* Espacio entre los elementos de la cuadrícula */
+    }
+
+    .primero {
+        grid-area: primero;
+        height: 324px;
+
+    }
+
+    .primero h1 {
+        font-size: 64px;
+        padding-inline: 24px;
+    }
+
+
+    /* Segundo elemento */
+    .segundo {
+        grid-area: segundo;
+        overflow: hidden;
+        padding: 24px;
+    }
+
+    .segundo p {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+
+
+    /* Tercero elemento */
+    .tercero {
+        grid-area: tercero;
+        overflow: hidden;
+    }
+
+    .tercero p {
+        font-size: 32px;
+    }
+
+    .tercero img {
+        width: 208px;
+        margin-bottom: -160px;
+    }
+
+
+
+    .cuarto {
+        grid-area: cuarto;
+        align-items: flex-start;
+        overflow: hidden;
+        padding: 32px;
+    }
+
+    .cuarto>p {
+        justify-content: flex-start;
+        font-size: 24px;
+        line-height: 1;
+        margin-bottom: 18px;
+    }
+
+    .cuarto .cuartoPequeño p {
+        text-align: left;
+        padding-left: 0;
+        font-size: 16px;
+        line-height: 1;
+
+    }
+
+    .cuarto img {
+        width: 350px;
+    }
+
+
+
+    .quinto {
+        grid-area: quinto;
+        flex-direction: row;
+
+    }
+
+    .quinto img {
+        margin-bottom: 0;
+    }
+
+    .quinto p {
+        text-align: left;
+        font-size: 32px;
+    }
+
+    .sexto {
+        grid-area: sexto;
+
+    }
+
+    .sexto span {
+        font-size: 56px;
+    }
+
+    .septimo {
+        grid-area: septimo;
+        padding-inline: 32px;
+    }
+
+    .septimo p {
+        font-size: 38px;
+        padding-top: 64px;
+    }
+
+    .septimo img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+
+    .octavo {
+        grid-area: octavo;
+
+    }
+
+    .octavo p {
+        font-size: 38px;
+        padding-bottom: 32px;
+    }
+
+    .octavo img {
+        width: 100%;
+        max-width: 320px;
+    }
+}
